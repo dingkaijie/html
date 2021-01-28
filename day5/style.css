@@ -81,8 +81,8 @@ button {
 }
 
 .search input {
-    /* float: left; */
-    width: 340px;
+    float: left;
+    width: 300px;
     height: 40px;
     /*内编筐左边有个撑开 但是要盒子整个宽度要减掉padding*/
     padding-left: 20px;
@@ -92,7 +92,48 @@ button {
 }
 
 .search button {
+    float: left;
     width: 50px;
     height: 42px;
-    /* background: url(images/btn.png) no-repeat; */
+    background: url(images/btn.png);
+}
+
+.user {
+    float: left;
+    height: 42px;
+    line-height: 42px;
+    margin-left: 30px;
+    font-size: 14px;
+    color: #666;
+}
+
+.banner {
+    height: 420px;
+    background: #1c036c url(images/banner2.jpg) no-repeat top center;
+}
+
+.subnav {
+    width: 150px;
+    height: 420px;
+    padding: 0 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.subnav ul li {
+    height: 45px;
+    line-height: 45px;
+}
+
+.subnav ul li a {
+    color: #ccc;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.subnav ul li a:hover {
+    color: blue;
+}
+
+.subnav a span {
+    float: right;
 }
