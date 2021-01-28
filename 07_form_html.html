@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="" method="POST">
+
+
+        <label>用户名：<input type="text" value="请输入名字" name="username" /></label>
+        昵称：<input type="text" value="请输入名字" name="nicheng" /></br>
+        <!-- 第二种方法 用for 和id 来绑定 -->
+        <label for="ps">密码：</label><input type="password" id="ps" /></br>
+
+        性别： 男：<input type="radio" name="sex"> 女：<input type="radio" name="sex">
+        爱好： 篮球：<input type="checkbox" name="hobby"></br>
+        足球<input type="checkbox" name="hobby" checked='checked'></br>
+        游泳：<input type="checkbox" name="hobby"></br>
+        乒乓球：<input type="checkbox" name="hobby"></br>
+
+        <input type="button" value="获取短信验证码"></br>
+        <input type="submit" value="提交所填"></br>
+        <input type="reset" />
+        上传文件: <input type="file" />
+
+        籍贯：
+        <select>
+            <option>请选择省份</option>
+            <option>北京</option>
+            <option selected="selected">上海</option>
+            <option>江苏</option>
+            <option>浙江</option>
+            <option>山西</option>
+
+
+        </select>
+
+    </form>
+</body>
+
+</html>

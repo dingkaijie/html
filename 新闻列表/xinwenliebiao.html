@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        /* 去掉列表默认样式 */
+        
+        li {
+            list-style: none;
+        }
+        
+        .box {
+            width: 298px;
+            height: 198px;
+            /* 盒子边框 */
+            border: 1px solid #ccc;
+            /*盒子  上方下移100px 水平居中*/
+            margin: 100px auto;
+            /* r如果给了padding值 会撑大盒子 所以要在盒子width和height减掉*/
+            padding: 15px;
+            /*背景图片*/
+            background-image: url(images/line.jpg);
+        }
+        
+        .box h2 {
+            font-size: 18px;
+            /* 上下 左右*/
+            padding: 5px 0;
+            border-bottom: 1px solid #ccc;
+            margin-bottom: 10px;
+        }
+        
+        .box ul li {
+            height: 30px;
+            /* li 是块元素 不指定宽 跟父亲块大小同等*/
+            border-bottom: 1px dashed #ccc;
+            text-decoration: none;
+            line-height: 30px;
+            /* 插入背景*/
+            background-image: url(images/arr.jpg);
+            background-repeat: no-repeat;
+            background-position: 0px center;
+        }
+        
+        .box ul li a {
+            color: #333;
+            font-size: 12px;
+            text-decoration: none;
+            /* 给a一个向右的偏移*/
+            margin-left: 20px;
+            /* padding-left: 20px; */
+        }
+        
+        .box ul li a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <!-- 标题盒子 -->
+        <h2>最新文章</h2>
+        <ul>
+            <li><a href="#">北京</a></li>
+            <li><a href="#">上海</a></li>
+            <li><a href="#">南京</a></li>
+            <li><a href="#">苏州</a></li>
+            <li><a href="#">广州</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>

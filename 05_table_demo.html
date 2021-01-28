@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CH">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,
+        td,
+        th {
+            border: 4px solid red;
+            /* 合并相邻的边框*/
+            border-collapse: collapse;
+        }
+        
+        .hot {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <table cellspacing='0' width='500' height='200' align="center">
+        <caption>
+            <h3>小说排行榜</h3>
+        </caption>
+        <thead>
+            <tr class="hot">
+                <th>排行</th>
+                <th>关键词</th>
+                <th>趋势</th>
+                <th>今日搜索</th>
+                <th>最近七日</th>
+                <th>相关链接</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>鬼吹灯</td>
+                <td>
+                    <img src="image/2.jpeg" width="50" height="30">
+                </td>
+                <td rowspan="2">356</td>
+                <td>356</td>
+                <td><a href="#">图片</a>
+                    <a href="#">贴吧</a>
+                    <a href="#">百度</a></td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>鬼吹灯</td>
+                <td>趋势</td>
+                <!-- <td>356</td> -->
+                <td>356</td>
+                <td><a href="#">图片</a>
+                    <a href="#">贴吧</a>
+                    <a href="#">百度</a></td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>鬼吹灯</td>
+                <td>趋势</td>
+                <td>356</td>
+                <td>356</td>
+                <td><a href="#">图片</a>
+                    <a href="#">贴吧</a>
+                    <a href="#">百度</a></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>最后</td>
+                <td colspan="6">合并</td>
+            </tr>
+        </tfoot>
+
+    </table>
+
+</body>
+
+</html>

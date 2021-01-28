@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 复合选择器*/
+        
+        .nav a {
+            color: pink;
+        }
+        
+        .wangsicong ul li {
+            color: red;
+        }
+        /*后代选择器*/
+        
+        div strong {
+            color: green;
+        }
+        /*子代选择器*/
+        
+        div>strong {
+            color: blue;
+        }
+        /*交叉选择器*/
+        
+        p.red {
+            color: red;
+        }
+        /*并集选择器*/
+        
+        p,
+        span,
+        .bingji {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <a href="#">内部链接</a>
+        <a href="#">内部链接</a>
+        <a href="#">内部链接</a>
+    </div>
+    <a href="#">外部选择器</a>
+    <a href="#">外部选择器</a>
+    <a href="#">外部选择器</a>
+
+    <ul>
+        <li>一条狗</li>
+        <li>一条狗</li>
+        <li>一条狗</li>
+    </ul>
+    <div class="wangsicong">
+        <ul>
+            <li>一条狗</li>
+            <li>一条狗</li>
+            <li>一条狗</li>
+        </ul>
+    </div>
+
+    <div>
+        <strong>儿子</strong>
+        <strong>儿子</strong>
+        <strong>儿子</strong>
+    </div>
+
+    <div>
+        <p>
+            <strong>孙子</strong>
+            <strong>孙子</strong>
+            <strong>孙子</strong>
+        </p>
+    </div>
+
+
+
+    <div>
+        <p class="red">hello</p>
+        <p class="red">hello</p>
+        <p class="red">hello</p>
+
+        <div class="red">nihao</div>
+        <div class="red">nihao</div>
+        <div class="red">nihao</div>
+
+        <p>haha</p>
+        <p>haha</p>
+        <p>haha</p>
+    </div>
+
+    <!-- 并集选择器 -->
+    <p>并集选择器</p>
+    <p>并集选择器</p>
+    <p>并集选择器</p>
+    <span>并集选择器</span>
+    <span>并集选择器</span>
+    <span>并集选择器</span>
+    <div class="bingji">并集选择器</div>
+    <div>并集选择器</div>
+
+
+</body>
+
+</html>

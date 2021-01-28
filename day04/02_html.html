@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 清除浮动样式*/
+        
+        .clearfox:after {
+            content: "";
+            display: block;
+            height: 0;
+            visibility: hidden;
+            clear: both;
+        }
+        
+        .father {
+            width: 300px;
+            /* height: 300px; */
+            background-color: pink;
+            /* 取消浮动方法一*/
+            /* border: 1px solid #ccc; */
+            /* 取消浮动 方法二 */
+            /* overflow: hidden; */
+        }
+        
+        .one {
+            float: left;
+            width: 100px;
+            height: 100px;
+            background-color: purple;
+        }
+        
+        .two {
+            float: left;
+            width: 100px;
+            height: 500px;
+            background-color: blue;
+        }
+        
+        .son {
+            width: 400px;
+            height: 200px;
+            background-color: skyblue;
+        }
+        /* .clear {
+            clear: both;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="father clearfox">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="clear"></div>
+    </div>
+    <div class="son"></div>
+</body>
+
+</html>

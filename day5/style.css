@@ -1,0 +1,98 @@
+/* 消除默认边距*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f3f5f7;
+}
+
+
+/* 清除li默认样式*/
+
+li {
+    list-style: none;
+}
+
+
+/*去掉button默认的边框*/
+
+button {
+    border: none;
+}
+
+
+/* 板心宽度设置好  居中*/
+
+.w {
+    width: 1200px;
+    margin: auto;
+}
+
+
+/*head start*/
+
+.head {
+    height: 42px;
+    background-color: pink;
+    /*上下外边框30 左右auto*/
+    margin: 30px auto;
+}
+
+.logo {
+    float: left;
+    margin-right: 60px;
+}
+
+.nav {
+    float: left;
+}
+
+.nav ul li {
+    float: left;
+}
+
+
+/*  导航栏文字大小不一样时候，盒子不设置宽度，用padding撑开*/
+
+.nav ul li a {
+    display: block;
+    height: 40px;
+    padding: 0 10px;
+    margin-right: 20px;
+    line-height: 40px;
+    font-size: 18px;
+    color: #050505;
+    text-decoration: none;
+}
+
+
+/* 鼠标经过显示下边框*/
+
+.nav ul li a:hover {
+    border-bottom: 2px solid #00a4ff;
+}
+
+.search {
+    float: left;
+    margin-left: 70px;
+}
+
+.search input {
+    /* float: left; */
+    width: 340px;
+    height: 40px;
+    /*内编筐左边有个撑开 但是要盒子整个宽度要减掉padding*/
+    padding-left: 20px;
+    border: 1px solid #00a4ff;
+    border-right: 0px;
+    color: #ccc;
+}
+
+.search button {
+    width: 50px;
+    height: 42px;
+    /* background: url(images/btn.png) no-repeat; */
+}

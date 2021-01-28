@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nav {
+            /*让div中的a元素都居中*/
+            text-align: center;
+        }
+        
+        .nav a {
+            /*a元素也是有大小的*/
+            /*把行内元素a 改为行内快元素*/
+            display: inline-block;
+            width: 120px;
+            height: 50px;
+            background-color: pink;
+            /* 行高 可以把单行文字垂直居中 把文字居中*/
+            line-height: 50px;
+            /*取消下划线*/
+            text-decoration: none;
+            /*添加背景同片*/
+            background-image: url(image/bg.png);
+            /* 图片 不平铺*/
+            background-repeat: no-repeat;
+        }
+        /* 鼠标经过链接 背景图片更换*/
+        
+        .nav a:hover {
+            background-image: url(image/bg4.jpg);
+        }
+        
+        .alpha {
+            width: 300px;
+            height: 300px;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <a href="#">网站链接</a>
+        <a href="#">网站链接</a>
+        <a href="#">网站链接</a>
+        <a href="#">网站链接</a>
+    </div>
+    <div class="alpha"></div>
+</body>
+
+</html>

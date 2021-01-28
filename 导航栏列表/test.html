@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        li {
+            list-style: none;
+        }
+        
+        .banner {
+            width: 760px;
+            height: 150px;
+            background-color: pink;
+            margin: auto;
+        }
+        
+        .nav {
+            width: 760px;
+            height: 32px;
+            /* background-color: pink; */
+            margin: auto;
+            background: url(images/nav_bg.jpg) repeat-x;
+        }
+        
+        .nav ul li {
+            float: left;
+        }
+        
+        .nav ul li a {
+            /* a 是行内元素 要转换*/
+            display: inline-block;
+            width: 80px;
+            height: 32px;
+            /* background-color: pink; */
+            background: url(images/button1.jpg) no-repeat;
+            font-size: 12px;
+            text-decoration: none;
+            line-height: 32px;
+            text-align: center;
+        }
+        
+        .nav ul li a:hover {
+            background: url(images/button2.jpg) no-repeat;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="banner">
+        <img src="images/banner.jpg" alt="">
+    </div>
+    <div class="nav">
+        <ul>
+            <li>
+                <a href="#">aaa</a>
+            </li>
+            <li>
+                <a href="#">bbb</a>
+            </li>
+            <li>
+                <a href="#">ccc</a>
+            </li>
+            <li>
+                <a href="#">ddd</a>
+            </li>
+            <li>
+                <a href="#">eee</a>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
