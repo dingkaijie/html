@@ -1,0 +1,30 @@
+.up {
+  position: relative;
+  width: 1200px;
+  height: 300px;
+  background-color: pink;
+}
+
+.down {
+  width: 1200px;
+  height: 200px;
+  background-color: purple;
+}
+
+.left-1 {
+  position: absolute;
+  width: 100px;
+  height: 40px;
+  top: 20px;
+  left: 0px;
+  background-color: blue;
+}
+
+.right-1 {
+  position: absolute;
+  width: 100px;
+  height: 40px;
+  top: 20px;
+  right: 0px;
+  background-color: black;
+}
